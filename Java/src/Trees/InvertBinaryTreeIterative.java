@@ -1,0 +1,40 @@
+package Trees;
+
+import DS.TreeNode;
+
+import java.util.Stack;
+
+/*
+    // Definition of TreeNode:
+    public class TreeNode {
+        public int value;
+        public TreeNode left;
+        public TreeNode right;
+        public TreeNode(int value) {
+            this.value = value;
+        }
+    }
+ */
+
+public class InvertBinaryTreeIterative {
+    public static TreeNode invertBinaryTreeIterative(TreeNode root) {
+        if (root == null) return null;
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.pop();
+            // Swap the left and right subtrees of the current node.
+            TreeNode temp = node.left;
+            node.left = node.right;
+            node.right = temp;
+            // Push the left and right subtrees onto the stack.
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+            if (node.right != null) {
+                stack.push(node.right);
+            }
+        }
+        return root;
+    }
+}
