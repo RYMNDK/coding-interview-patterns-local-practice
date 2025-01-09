@@ -1,4 +1,5 @@
 package Trees;
+import DS.TreeNode;
 
 /*
     // Definition of TreeNode:
@@ -12,10 +13,8 @@ package Trees;
     }
  */
 
-import DS.TreeNode;
-
 public class BalancedBinaryTreeValidation {
-    public static boolean Solution(TreeNode root) {
+    public static boolean solution(TreeNode root) {
         return getHeightImbalance(root) != -1;
     }
 

@@ -1,8 +1,6 @@
 package Trees;
-
-import DS.TreeNode;
-
 import java.util.Stack;
+import DS.TreeNode;
 
 /*
     // Definition of TreeNode:
@@ -17,7 +15,7 @@ import java.util.Stack;
  */
 
 public class InvertBinaryTreeIterative {
-    public static TreeNode invertBinaryTreeIterative(TreeNode root) {
+    public static TreeNode solution(TreeNode root) {
         if (root == null) return null;
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root);

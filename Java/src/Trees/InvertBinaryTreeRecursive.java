@@ -1,4 +1,5 @@
 package Trees;
+import DS.TreeNode;
 
 /*
     // Definition of TreeNode:
@@ -12,10 +13,8 @@ package Trees;
     }
  */
 
-import DS.TreeNode;
-
 public class InvertBinaryTreeRecursive {
-    public static TreeNode invertBinaryTreeRecursive(TreeNode root) {
+    public static TreeNode solution(TreeNode root) {
         // Base case: If the node is null, there's nothing to invert.
         if (root == null) {
             return null;
@@ -25,8 +24,8 @@ public class InvertBinaryTreeRecursive {
         root.left = root.right;
         root.right = temp;
         // Recursively invert the left and right subtrees.
-        invertBinaryTreeRecursive(root.left);
-        invertBinaryTreeRecursive(root.right);
+        solution(root.left);
+        solution(root.right);
         return root;
     }
 }
