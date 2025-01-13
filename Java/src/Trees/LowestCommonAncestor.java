@@ -17,7 +17,7 @@ import DS.TreeNode;
 public class LowestCommonAncestor {
     static TreeNode LCA;
 
-    public TreeNode solution(TreeNode root, TreeNode p, TreeNode q) {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         dfs(root, p, q);
         return LCA;
     }

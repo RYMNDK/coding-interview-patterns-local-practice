@@ -15,7 +15,7 @@ import DS.TreeNode;
  */
 
 public class InvertBinaryTreeIterative {
-    public static TreeNode solution(TreeNode root) {
+    public static TreeNode invertBinaryTreeIterative(TreeNode root) {
         if (root == null) return null;
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root);

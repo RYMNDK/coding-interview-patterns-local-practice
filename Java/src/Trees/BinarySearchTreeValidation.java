@@ -14,7 +14,7 @@ import DS.TreeNode;
  */
 
 public class BinarySearchTreeValidation {
-    public static boolean solution(TreeNode root) {
+    public static boolean binarySearchTreeValidation(TreeNode root) {
         // Start validation at the root node. The root node can contain any
         // value, so set the initial lower and upper bounds to -infinity and
         // +infinity, respectively.

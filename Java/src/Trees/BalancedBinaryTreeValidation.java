@@ -14,7 +14,7 @@ import DS.TreeNode;
  */
 
 public class BalancedBinaryTreeValidation {
-    public static boolean solution(TreeNode root) {
+    public static boolean balancedBinaryTreeValidation(TreeNode root) {
         return getHeightImbalance(root) != -1;
     }
 

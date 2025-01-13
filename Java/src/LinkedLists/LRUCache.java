@@ -1,21 +1,18 @@
 package LinkedLists;
 
 import java.util.HashMap;
-import DS.DoublyLinkedListNode;
 
-/*
-    // Definition of DoublyLinkedListNode:
-    public class DoublyLinkedListNode {
-        public int key;
-        public int val;
-        public DoublyLinkedListNode next;
-        public DoublyLinkedListNode prev;
-        public DoublyLinkedListNode(int key, int val) {
-            this.key = key;
-            this.val = val;
-        }
+// Definition of DoublyLinkedListNode:
+class DoublyLinkedListNode {
+    public int key;
+    public int val;
+    public DoublyLinkedListNode next;
+    public DoublyLinkedListNode prev;
+    public DoublyLinkedListNode(int key, int val) {
+        this.key = key;
+        this.val = val;
     }
- */
+}
 
 public class LRUCache {
     public int capacity;

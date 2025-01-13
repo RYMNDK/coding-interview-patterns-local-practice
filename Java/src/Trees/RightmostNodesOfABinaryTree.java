@@ -18,7 +18,7 @@ import DS.TreeNode;
  */
 
 public class RightmostNodesOfABinaryTree {
-    public List<TreeNode> solution(TreeNode root) {
+    public List<TreeNode> rightmostNodesOfABinaryTree(TreeNode root) {
         if (root == null) {
             return new ArrayList<>();
         }
