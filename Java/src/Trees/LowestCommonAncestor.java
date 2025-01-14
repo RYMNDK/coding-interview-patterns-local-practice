@@ -5,17 +5,17 @@ import DS.TreeNode;
 /*
     // Definition of TreeNode:
     public class TreeNode {
-        public int value;
+        public int val;
         public TreeNode left;
         public TreeNode right;
-        public TreeNode(int value) {
-            this.value = value;
+        public TreeNode(int val) {
+            this.val = val;
         }
     }
  */
 
 public class LowestCommonAncestor {
-    static TreeNode LCA;
+    public static TreeNode LCA;
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         dfs(root, p, q);

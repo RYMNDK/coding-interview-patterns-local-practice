@@ -5,18 +5,20 @@ import DS.TreeNode;
 /*
     // Definition of TreeNode:
     public class TreeNode {
-        public int value;
+        public int val;
         public TreeNode left;
         public TreeNode right;
-        public TreeNode(int value) {
-            this.value = value;
+        public TreeNode(int val) {
+            this.val = val;
         }
     }
  */
 
 public class InvertBinaryTreeIterative {
     public static TreeNode invertBinaryTreeIterative(TreeNode root) {
-        if (root == null) return null;
+        if (root == null) {
+            return null;
+        }
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root);
         while (!stack.isEmpty()) {

@@ -4,11 +4,11 @@ import DS.TreeNode;
 /*
     // Definition of TreeNode:
     public class TreeNode {
-        public int value;
+        public int val;
         public TreeNode left;
         public TreeNode right;
-        public TreeNode(int value) {
-            this.value = value;
+        public TreeNode(int val) {
+            this.val = val;
         }
     }
  */
@@ -28,14 +28,14 @@ public class BinarySearchTreeValidation {
         }
         // If the current node's value is not within the valid bounds, this
         // tree is not a valid BST.
-        if (!(root.value < lowerBound && root.value > upperBound)) {
+        if (!(root.val < lowerBound && root.val > upperBound)) {
             return false;
         }
         // If the left subtree isn't a BST, this tree isn't a BST.
-        if (!isWithinBounds(root.left, lowerBound, root.value)) {
+        if (!isWithinBounds(root.left, lowerBound, root.val)) {
             return false;
         }
         // Otherwise, return true if the right subtree is also a BST.
-        return isWithinBounds(root.right, root.value, upperBound);
+        return isWithinBounds(root.right, root.val, upperBound);
     }
 }
